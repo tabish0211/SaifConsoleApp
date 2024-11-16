@@ -1,0 +1,13 @@
+﻿ //WAP gs, on given bs, 10%--hra,20%--ta
+            Console.WriteLine("Enter basic salary");
+            int basicSalary = Convert.ToInt32(Console.ReadLine());
+            float hra = (float)0.1 * basicSalary;
+            float ta = (float)0.2 * basicSalary;
+
+            float grossSalary = basicSalary + ta + hra;
+            Console.WriteLine($"Your basic salary was {basicSalary} hra={hra} ta={ta} and gross salary={grossSalary}");
+
+
+
+            ///
+

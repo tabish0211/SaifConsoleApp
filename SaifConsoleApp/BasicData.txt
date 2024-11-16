@@ -1,0 +1,26 @@
+﻿ //int x = 30;//stack unwinding
+            //Console.WriteLine("Hello, World!");
+            //Console.Write("Hi\n");
+
+            //variable---memory location for the programmer --datatype var_nm
+            //Datatype -defines the what type of data can be store by the specific variable 
+
+            //valuetype---refrence type
+            //value type--creates memory on stack--at compile time--primitive--int, float,char,---
+            //reference type--memory creates on heap--runtime---string 
+
+            //Console.WriteLine(sizeof(int));//char,float,double,long,bool,decimal
+
+            //int age = 30;
+            //Console.WriteLine(age);
+            //Console.WriteLine( "My age is "+age);
+            //Console.WriteLine($"My age is {age}");
+
+            //string name = "Tabish";
+            //Console.WriteLine($"My name is {name} and my age is {age}");
+
+            //Console.WriteLine("Enter the name:");
+            //string input=Console.ReadLine();
+            //Console.WriteLine("Enter the Age:");
+            //int inputAge = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine($"you have entered the input s :{input} and age is {inputAge}");
