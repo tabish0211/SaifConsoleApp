@@ -11,3 +11,204 @@
 
             ///
 
+//WAP swap the two variables using 3rd varaiable and without variable
+            //int x = 10, y = 20;
+            //Console.WriteLine($"Before swapping x={x} and y={y}");
+            ////int temp;
+            ////temp = x;
+            ////x = y;
+            ////y = temp;
+            //x = x + y;//30
+            //y = x - y;//30-20=10
+            //x = x - y;//30-10=20
+            //Console.WriteLine($"After swapping x={x} and y={y}");
+
+            //int--int32
+            Console.WriteLine(sizeof(int));//char,float,double,long,short,bool
+            //assignment using--xor gate--
+
+
+            //how increment decrement works
+                  //increment 
+            int x = 1,y;
+            //x=4
+           // y = x++ + x++ + x;//1+2+3
+
+            //x++-----it has to throw to expression first and then increase value in memory
+            //++x ---it has to increase first thenthrow to expression
+            y = ++x + x++ + ++x;//2 +2+4
+            Console.WriteLine($"y={y} and x={x}");//6 3
+
+       //wap to sum of 3 digits
+            //numbers
+             int x = 432;
+            int temp = x;
+            //%
+            int a = x % 10;//2
+            x = x / 10;//43
+            int b=x% 10;//3
+            x = x / 10;//4
+            int c = x;//4
+            int sum = a + b + c;
+            Console.WriteLine($"sum of three digits={sum}");
+            //reverse of this inp=432---234
+            int rev=a * 100 + b * 10 + c;//234
+            Console.WriteLine($"original number ={temp} rev of three digits={rev}");
+
+
+            //a=2 b=3 c=4
+            //a+b+c
+
+            /WAP area
+            Console.WriteLine("enter the length");
+            int len = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter the width");
+            int width = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter the rate of the land");
+            int rate = Convert.ToInt32(Console.ReadLine());
+
+            int area = len * width;
+            int totalSqFtRate = rate * area;
+
+            Console.WriteLine($"land len={len} width={width} area={area} rate={rate} toatlsqftRate={totalSqFtRate}");
+
+       
+       //syntaxes for decison control
+       //Decison controls
+            if (true)
+            {
+
+            }
+            else { 
+            
+            }
+
+            //Ladder if-else
+            if (true)
+            {
+                
+            }
+            else if (true) { 
+            
+            }
+            else
+            {
+                
+            }
+
+            //nested
+            if (true)
+            {
+                if (true)
+                {
+                    
+                }
+                else
+                {
+
+                }
+            }
+
+            int x = 1,y = 2;
+            bool result = x > y;
+            string val = x > y ? "x is larger tha y" : "y is larger than x";
+
+            int choice = 1;
+         
+            switch (choice)
+            {
+                case 1:
+                    Console.WriteLine("this is 1 ");
+                    break;
+                default:
+                    Console.WriteLine("not a right input");
+                    break;
+            }
+
+
+            //need of switch case
+             Console.WriteLine("Enter customer");
+            string custType = Console.ReadLine();
+
+            //bulky code
+            if (custType=="basic")
+            {
+                Console.WriteLine("u r basic customer");
+            }
+            else if (custType=="gold")
+            {
+                Console.WriteLine("u r gold customer");
+            }
+            else if(custType=="silver")
+            {
+                Console.WriteLine("u r silver customer");
+            }
+
+
+            //clean code 
+            switch (custType)
+            {
+                case "basic":
+                    Console.WriteLine("u r basic customer");
+                    break;
+
+                case "gold":
+                    Console.WriteLine("u r gold customer");
+                    break;
+                case "silver":
+                    Console.WriteLine("u r silver customer");
+                    break;
+                case "Platinum":
+                    Console.WriteLine("u r platinum customer");
+                    break;
+                default:
+                    Console.WriteLine("not a right choice");
+                    break;
+            }
+
+
+            //eldest
+            //who is eldest amongts three brother
+            Console.WriteLine("enter the age of A");
+            int ageA = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the age of B");
+            int ageB = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the age of C");
+            int ageC = Convert.ToInt32(Console.ReadLine());
+           
+            if (ageA > ageB) {
+                if (ageA>ageC)
+                {
+                    Console.WriteLine( "A is eldest one");
+                }
+                else
+                {
+                    Console.WriteLine("C is eldest one");
+                }
+
+            
+
+            }
+
+            else
+            {
+                if (ageB > ageC)
+                {
+                    Console.WriteLine("B is eldest one");
+                }
+                else
+                {
+                    Console.WriteLine("C is eldest one");
+                }
+
+            }
+
+
+            //youngest is a n assignment
+
+            1.take three digit number and reverse it and find out after reversal the original number and reverse 
+            number are same or not
+            234---432---numbers are not same
+            111---111---numbers are same 
