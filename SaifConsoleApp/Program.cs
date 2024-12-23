@@ -10,8 +10,8 @@ namespace SaifConsoleApp
         //entry point method---any subroutine written inside class it is called
         
         
-        static void Main()
-        {
+        //static void Main()
+        //{
 
             //Single dimensional array
             //MultiDimensional array
@@ -118,26 +118,26 @@ namespace SaifConsoleApp
             //    }
             //}
 
-            int[] arrVal = { 6, 2, 1, 9, 0 };
-            //Console.WriteLine("Before sorting");
-            Console.WriteLine("Before Reevrsing");
-            for (int i = 0; i < arrVal.Length; i++)
-            {
-                Console.WriteLine(arrVal[i]);
-            }
+        //    int[] arrVal = { 6, 2, 1, 9, 0 };
+        //    //Console.WriteLine("Before sorting");
+        //    Console.WriteLine("Before Reevrsing");
+        //    for (int i = 0; i < arrVal.Length; i++)
+        //    {
+        //        Console.WriteLine(arrVal[i]);
+        //    }
 
-           // Console.WriteLine( "after sorting");
-            //Array.Sort(arrVal);//ascending
-            Console.WriteLine("after reversing");
-            Array.Reverse(arrVal);
-            for (int i = 0; i < arrVal.Length; i++)
-            {
-                Console.WriteLine(arrVal[i]);
-            }
+        //   // Console.WriteLine( "after sorting");
+        //    //Array.Sort(arrVal);//ascending
+        //    Console.WriteLine("after reversing");
+        //    Array.Reverse(arrVal);
+        //    for (int i = 0; i < arrVal.Length; i++)
+        //    {
+        //        Console.WriteLine(arrVal[i]);
+        //    }
 
-            //descending 
-            Console.ReadLine();
+        //    //descending 
+        //    Console.ReadLine();
 
-        }
+        //}
     }
 }
