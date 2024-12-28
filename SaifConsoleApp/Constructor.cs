@@ -42,7 +42,8 @@ namespace SaifConsoleApp
 
         //copy constructor
         public Customer CopyConstructor() {
-
+            
+            //Shallow copy
             // Customer customerCopy = new Customer(customer._name,customer.email);
             Customer customerCopy=(Customer)this.MemberwiseClone();            
             return customerCopy;
@@ -61,14 +62,14 @@ namespace SaifConsoleApp
     class Caller
     {
 
-        static void Main()
-        { 
+        //static void Main()
+        //{ 
         
-            Customer customer = new Customer("Ramesh","ramesh@gmail.com");
+        //    Customer customer = new Customer("Ramesh","ramesh@gmail.com");
 
-            Customer customer1 = customer.CopyConstructor();
+        //    Customer customer1 = customer.CopyConstructor();
            
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
     }
 }
