@@ -9,40 +9,40 @@ namespace SaifConsoleApp
 {
     internal class InheritanceDemo
     {
-        class Caller
-        {
+        //class Caller
+        //{
 
-            static void Main()
-            {
-                //BMW car=new BMW();
-                //car.Name = "GT6500";
-                //car.CarSound();
-                //car.EngineDetails();
-                //car.Price = 200;
+        //    static void Main()
+        //    {
+        //        //BMW car=new BMW();
+        //        //car.Name = "GT6500";
+        //        //car.CarSound();
+        //        //car.EngineDetails();
+        //        //car.Price = 200;
 
-                BMWR bmwR = new BMWR(1,2,"Hello");
-                BMW bmw = new BMW();
+        //        BMWR bmwR = new BMWR(1,2,"Hello");
+        //        BMW bmw = new BMW();
 
-                bmwR.CarSound();//Boom
-                bmw.CarSound();//Wooh
+        //        bmwR.CarSound();//Boom
+        //        bmw.CarSound();//Wooh
 
-                bmw.Discount();
+        //        bmw.Discount();
 
-                //A base class reference can point to the derived class object
+        //        //A base class reference can point to the derived class object
 
-                Car car = new BMW();
-                car.CarSound();
-                car.Discount();
+        //        Car car = new BMW();
+        //        car.CarSound();
+        //        car.Discount();
                 
 
-                //bmw.CarSound();//car
-                //bmw.EngineDetails();//BMW
-                //bmw.SpecifTORseries();//BMWRSeries
+        //        //bmw.CarSound();//car
+        //        //bmw.EngineDetails();//BMW
+        //        //bmw.SpecifTORseries();//BMWRSeries
                
 
-                Console.ReadLine();
-            }
-        }
+        //        Console.ReadLine();
+        //    }
+        //}
 
       abstract  class Car { 
         

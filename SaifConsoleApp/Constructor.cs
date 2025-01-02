@@ -59,17 +59,17 @@ namespace SaifConsoleApp
 
     }
 
-    class Caller
-    {
+    //class Caller
+    //{
 
-        //static void Main()
-        //{ 
+    //    //static void Main()
+    //    //{ 
         
-        //    Customer customer = new Customer("Ramesh","ramesh@gmail.com");
+    //    //    Customer customer = new Customer("Ramesh","ramesh@gmail.com");
 
-        //    Customer customer1 = customer.CopyConstructor();
+    //    //    Customer customer1 = customer.CopyConstructor();
            
-        //    Console.ReadLine();
-        //}
-    }
+    //    //    Console.ReadLine();
+    //    //}
+    //}
 }
