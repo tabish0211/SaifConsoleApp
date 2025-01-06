@@ -8,15 +8,24 @@ namespace SaifConsoleApp
 {
     internal class ExceptionHandling
     {
-        static void Main()
-        {
+        //static void Main()
+        //{
+        //    try
+        //    {
+        //        Sum();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine( ex.StackTrace);
 
-            Divide();
-            Sum();
+        //    }
 
-            Console.ReadLine();
+        //    Console.WriteLine("even exception comes code will reach here too");
 
-        }
+
+        //    Console.ReadLine();
+
+        //}
 
         static void Divide()
         {
@@ -28,32 +37,35 @@ namespace SaifConsoleApp
                 Console.WriteLine("Enter another  number");
                 int y = Convert.ToInt32(Console.ReadLine());
                 //open--the channle
-                if (y==0)
-                {
-                    throw new MyException("It is wrong to divide by zero");
-                }
+                //if (y==0)
+                //{
+                //    throw new MyException("It is wrong to divide by zero");
+                //}
                 int z = x / y;
 
 
                 Console.WriteLine(z);
             }
 
-            catch(MyException ex) {
+            //catch(MyException ex) {
 
-                Console.WriteLine(ex.Message);
-            }
+            //    Console.WriteLine(ex.Message);
+            //}
             catch (NullReferenceException ex)
             {
-                Console.WriteLine(ex.Message);
+                throw;
+                //Console.WriteLine(ex.Message);
             }
             catch (DivideByZeroException ex)
             {
-                Console.WriteLine(ex.Message);
+                throw;
+                //Console.WriteLine(ex.Message);
             }
 
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                throw;
+                //Console.WriteLine(ex.Message);
 
             }
             
@@ -69,14 +81,23 @@ namespace SaifConsoleApp
 
         static void Sum()
         {
-            Console.WriteLine("Enter number");
-            int x = Convert.ToInt32(Console.ReadLine());
+            try
+            {
+                //Console.WriteLine("Enter number");
+                //int x = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter another  number");
-            int y = Convert.ToInt32(Console.ReadLine());
-
-            int z = x + y;
-            Console.WriteLine(z);
+                //Console.WriteLine("Enter another  number");
+                //int y = Convert.ToInt32(Console.ReadLine());
+                Divide();
+                //int z = x + y;
+                //Console.WriteLine(z);
+            }
+            catch (Exception ex)
+            {
+                throw;//recommended
+             //   throw ex;//you will loose the orginal exception stack trace 
+            }
+            
         }
     }
 
